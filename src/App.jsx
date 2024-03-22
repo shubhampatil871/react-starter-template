@@ -45,7 +45,7 @@ const StarterTemplateInstructions = () => {
           </ol>
           <div className="card-actions justify-center">
             <a
-              href="https://github.com/shubhampatil871"
+              href="https://github.com/shubhampatil871/react-starter-template"
               className="btn btn-primary m-2"
             >
               Get Started
