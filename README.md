@@ -22,7 +22,7 @@ Make sure you have Node.js (version 12 or higher) and Yarn installed on your mac
 
 3. Install additional dependencies:
    ```bash
-   yarn add -D tailwindcss postcss autoprefixer prettier dotenv
+   yarn add -D tailwindcss postcss autoprefixer prettier dotenv daisyui@latest
    ```
 
 4. Initialize Tailwind CSS:
