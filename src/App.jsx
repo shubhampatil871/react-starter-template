@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import notifications from "./data/data";
+import Notification from "./components/Notification";
 
 const StarterTemplateInstructions = () => {
   const [name, setName] = useState("");
@@ -12,16 +14,14 @@ const StarterTemplateInstructions = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center ">
-        <div className="p-4 m-40 bg-base-300 card">
-          <div className="flex-wrap font-mono text-2xl font-semibold flex-grow-1 flex-shrink-1 text-center-">
-            Hello I'm {name}
+      <div className="flex items-start justify-center ">
+        <div className="px-3 py-2 my-20 bg-base-300 card w-[500px] text-wrap">
+          <div className="  text-center text-2xl font-semibold">
+            Notifications
           </div>
-          <div className="card-body">
-            {/* <label htmlFor="name">enter name</label> */}
-            <input className="input " value={name} onChange={handleChange} />
-            <button className="m-4 btn btn-accent">Set Name</button>
-          </div>
+          {notifications.map((noti, index) => (
+            <Notification key={noti.id} title={noti.title} message={noti.message} />
+          ))}
         </div>
       </div>
     </>
